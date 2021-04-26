@@ -36,3 +36,24 @@ test('User should be phillip gardner obj', () => {
   });
 });
 
+// less than and greater than
+
+test('Should be under 2000', () => {
+  const load1 = 1000;
+  const load2 = 200;
+  expect(load1 + load2).toBeLessThanOrEqual(2000);
+});
+
+// Regex
+
+test('There is no I in team', () => {
+  expect('team').not.toMatch(/I/);
+});
+
+// Arrays
+
+test('Admin should be in usernames', () => {
+  username = ['john', 'karen', 'chloe', 'admin']
+  expect(username).toContain('admin')
+})
+
