@@ -3,8 +3,7 @@ const functions = {
   isNull: () => null,
   checkValue: (x) => x,
   createUser: () => {
-    const user = { firstName: 'Phil' };
-    user['lastName'] = 'Gardner';
+    const user = { firstName: 'Phil', lastName: 'Gardner' };
     return user;
   }
 }
